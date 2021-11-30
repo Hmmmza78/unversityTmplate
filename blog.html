@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===font awesome=== -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- ===css file=== -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Layout</title>
+</head>
+
+<body>
+
+    <!-- ===Header start=== -->
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="./img/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times" onclick=" hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="couses.html">Courses</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Our Certificate Programme This Year</h1>
+
+        </div>
+    </section>
+    <!-- ===header end=== -->
+
+
+    <!-- ===blog start=== -->
+    <div class="blog-content">
+        <div class="row">
+            <div class="blog-l">
+                <img src="./img/certificate.jpg" alt="">
+                <h2>Our Certificate programme for 2021</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem odit molestiae maxime hic illo sunt
+                    nesciunt quos quo ab dolor iusto eveniet placeat, provident pariatur voluptatem, id voluptates
+                    cupiditate qui porro nihil! Recusandae.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, quos sed. Repudiandae incidunt,
+                    magni, ullam quae ab asperiores cupiditate eaque fuga ducimus autem nam nobis fugit tenetur,
+                    doloribus rem velit? Harum aspernatur eligendi cum inventore expedita, nam tenetur quam modi ullam
+                    mollitia dolore eos iure quibusdam illo ratione deleniti molestias totam incidunt id! Possimus in
+                    qui numquam est aliquam natus, error quo suscipit consectetur at consequatur doloribus ipsum
+                    repudiandae quia non voluptatum asperiores, commodi placeat a fugit.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis asperiores magnam omnis
+                    accusantium necessitatibus minus mollitia dolorum tempore esse possimus pariatur ea unde
+                    exercitationem consequuntur cumque quaerat repellat aspernatur, maxime veniam deleniti cupiditate,
+                    autem ad. Eligendi voluptate nam voluptatem voluptas?</p><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus at, ab ducimus laboriosam tempore,
+                    alias tenetur officiis debitis culpa repellat sed officia earum nihil!</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter your Name">
+                        <input type="email" placeholder="Enter your Email">
+                        <textarea rows="5" placeholder="Your Comments"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                    </form>
+
+
+
+                </div>
+            </div>
+            <div class="blog-r">
+                <h3>Pos Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>16</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>19</span>
+                </div>
+                <div>
+                    <span>Web Development</span>
+                    <span>48</span>
+                </div>
+                <div>
+                    <span>General CS</span>
+                    <span>29</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>14</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===footer start=== -->
+    <footer>
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellendus qui nam repudiandae, quisquam
+            eaque eum <br> consequatur explicabo voluptatum quidem porro
+            esse exercitationem, perferendis corporis.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+
+        <p>All Rights Reserved &copy; 2021</p>
+    </footer>
+
+
+    <script>
+        let navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0"
+        }
+        function hideMenu() {
+            navlinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+
+</html>

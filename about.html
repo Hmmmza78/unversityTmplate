@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===font awesome=== -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- ===css file=== -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Layout</title>
+</head>
+
+<body>
+
+    <!-- ===Header start=== -->
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="./img/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fas fa-times" onclick=" hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="couses.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>About Us</h1>
+
+        </div>
+    </section>
+    <!-- ===header end=== -->
+
+
+    <!-- ===about us=== -->
+    <div class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illo error quisquam perspiciatis enim
+                    dignissimos consequuntur quas nemo ipsa corrupti! Nesciunt illo dolore incidunt fugiat, veniam
+                    tempora reprehenderit ullam harum dolor error dolores? Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Dignissimos porro iste laudantium quam possimus! Vero rem quam est mollitia
+                    inventore quos, aperiam harum.</p><a href="#" class="hero-btn red-btn">Explore now</a>
+            </div>
+            <div class="about-col">
+                <img src="./img/about.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===footer start=== -->
+    <footer>
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellendus qui nam repudiandae, quisquam
+            eaque eum <br> consequatur explicabo voluptatum quidem porro
+            esse exercitationem, perferendis corporis.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+
+        <p>All Rights Reserved &copy; 2021</p>
+    </footer>
+
+
+    <script>
+        let navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0"
+        }
+        function hideMenu() {
+            navlinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+
+</html>
